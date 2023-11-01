@@ -1,5 +1,2 @@
-# Week 08
-
-### Sound Files
-
-### The DOM
+I chose a piece of pure music, "Sense from Childhood". I hope to focus on the music itself without being distracted by the lyrics.
+I set up the p5.Amplitude object, which is used to analyze the amplitude (volume) of the sound. I've created a p5.FFT object to do a Fast Fourier Transform (FFT). FFT can be used to analyze the spectral information of audio signals. The bandWidth variable is calculated and used to determine the analysis bandwidth of the spectrum. I set the angle mode to degrees so that angles can be used later for rotation. I use the fft.waveform() function to obtain the audio waveform data and store it in the wave variable. And the fft.analyze() function to obtain the spectrum analysis data of the audio and store it in the s variable. For the amplitudeinformation, I use the amp.getLevel() function. Based on the amplitude of the spectrum data, the height of each frequency band is calculated, and the rect function is used to draw a rectangular waveform, while the point function is used to draw a point waveform at the corresponding position.
