@@ -7,18 +7,15 @@ let levels = [];
 let palette = ['#f543b7', '#db38f5', '#a369e5', ' #21a4ea', '#59d7f5'];
 
 function preload() {
-  // 从URL加载音频
-  let audioURL = 'Scenes from Childhood.mp3';
-  sound = loadSound(audioURL, loaded);
+  sound = loadSound('Scenes from Childhood.mp3');
 }
 
 function loaded() {
-  // 一旦音频加载完成，播放它
   sound.play();
 }
 
 function setup() {
-  createCanvas(1112, 834);
+  createCanvas(windowWidth, windowHeight);
   amp = new p5.Amplitude();
   amp.setInput(sound);
   fft = new p5.FFT();
